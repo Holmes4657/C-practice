@@ -4,25 +4,24 @@
 
 int main()
 {
-	SetConsoleCP(1251); //Установка кодировки Windows1251
+	SetConsoleCP(1251); //Setting the encoding Windows1251
 	SetConsoleOutputCP(1251);
-	//setlocale(LC_ALL, "rus");
 	
 	unsigned char s1, s2;
 	
-	printf("Введите символ\n");
+	printf("Enter character\n");
 	scanf("%c", &s1);
 	
-	printf("Введенный символ: %c\n", s1);
-	printf("Его код %d\n", s1);
+	printf("Entered character: %c\n", s1);
+	printf("Its code: %d\n", s1);
 	
 	fflush(stdin);
 	
-	printf("Введите символ\n");
+	printf("Enter character\n");
 	scanf("%c", &s2);
 	
-	printf("Введенный символ: %c\n", s2); //Для получения корректного кода из таблицы кодировки при выводе необходимо осуществить явно преобразование с безнаковым модификатором unsigned
-	printf("Его код %d\n", s2); //Строки на базовом уровне реализованы с помощью массива символов
+	printf("Entered character: %c\n", s2); //To get the correct code from the encoding table during output, you must explicitly convert with an unsigned modifier
+	printf("Its code %d\n", s2); //Strings are implemented using a character array
 	
 	getch();
 	
